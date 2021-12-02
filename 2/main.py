@@ -33,3 +33,6 @@ for i in data:
         aim += i[1]
     elif i[0] == "up":
         aim -= i[1]
+
+#guess 1 1165563
+#guess 2 2086357770 correct
