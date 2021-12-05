@@ -1,7 +1,10 @@
 import copy
 import numpy as np
+import os
 
-with open("input.txt", 'r') as f:
+os.chdir("_adventofcode/adventofcode2021/5")
+
+with open("input2.txt", 'r') as f:
     d = f.readlines()
     data = []
     for i in d:
