@@ -1,8 +1,11 @@
+import copy
+import numpy as np
+import os
+
+os.chdir("_adventofcode/adventofcode2021/6")
+
 with open("input.txt", 'r') as f:
-    d = f.readlines()
+    d = f.readline().split(',')
     data = []
     for i in d:
-        w = i.strip('\n')
-        move = w.split(' ')[0]
-        val = int(w.split(' ')[1])
-        data.append([move, val])
+        data.append(int(i))
