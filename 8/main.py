@@ -8,7 +8,7 @@ with open("input.txt", 'r') as f:
     d = f.readlines()
     data = []
     for l in d:
-        m = l.strip('\n').split('|')
+        m = l.strip('\n').split('|') # should have split by ' | ' instead to not have to FUCK around with the strip method. wasted like 5 min.
         d1 = m[0].strip(' ').split(' ')
         d2 = m[1].strip(' ').split(' ')
         data.append([d1,d2])
