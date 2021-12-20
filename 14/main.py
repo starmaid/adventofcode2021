@@ -54,6 +54,7 @@ for k in rulesn.keys():
 
 for s in finalscore.keys():
     if s == begchar or s == endchar:
+        # this would break if the beg and end were the same char
         finalscore[s] = (finalscore[s] + 1) / 2
     else:
         finalscore[s] /= 2
